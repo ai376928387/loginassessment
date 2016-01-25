@@ -1,0 +1,51 @@
+#login-page {
+    background: url("../../images/background.jpg") 100% 100% no-repeat;
+    .feature-box {
+        width: 840px;
+        margin: 135px auto;
+        .left,
+        form {
+            padding: 50px 40px;
+            float: left;
+        }
+        .left {
+            width: 300px;
+        }
+        .right {
+            width: 540px;
+            float: left;
+        }
+        form {
+            width: 100%;
+        }
+        .left-title{
+            font-size:12px;
+            color:#d2d2d2;
+            line-height:1;
+            margin-bottom:45px;
+        }
+        .slides{
+            img{
+                width:220px;
+                height:auto;
+            }
+            p{
+                padding-top:17px;
+                color:#d2d2d2;
+            }
+        }
+        .right-title{
+            height:57px;
+            h2{
+                display:inline-block;
+                margin:0 auto;
+                line-height:57px;
+            }
+        }
+        #vend-tag{
+            display:inline-block;
+            height:100%;
+            padding-right:16px;
+        }
+    }
+}

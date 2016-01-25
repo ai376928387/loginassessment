@@ -1,0 +1,28 @@
+{
+  "slider": [
+    {
+      "id": "1",
+      "url": "images/gift-cards.jpg",
+      "name": "Gift Cards",
+      "copy": "Attract new customers & increase revenue with gift cards."
+    },
+    {
+      "id": "2",
+      "url": "images/cash-management.jpg",
+      "name": "Cash management",
+      "copy": "Track all cash movements from cash float to register closure."
+    },
+    {
+      "id": "3",
+      "url": "images/register.jpg",
+      "name": "Register",
+      "copy": "The beautifully fast web-based checkout experience. Try it now!"
+    },
+    {
+      "id": "4",
+      "url": "images/vend-u.jpg",
+      "name": "Vend University",
+      "copy": "Retail ebooks, guides, live events, webinars and training."
+    }
+  ]
+}
