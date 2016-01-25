@@ -63,7 +63,7 @@ Layout
 
   Having the navigation file (_navigation.scss) in this folder could make sense although I use to put it in components/ (see next section). I think it would be better in the /layout folder but I’ll let you decide.
 **/
-
+@import "layout/spacing";
 @import "layout/header";
 @import "layout/content";
 @import "layout/footer";

@@ -1,68 +1,82 @@
 <!DOCTYPE>
 <html>
-
-<head>
-    <title>Vend Log In Page</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script type="text/javascript" src="assets/js/dev/main.js"></script>
-</head>
-<body>
-    <header>
-        <nav id="top-bar">
-            <div class="content">
-                <ul>
-                    <li><a rel="nofollow" href="/">VendHQ</a></li>
-                    <li><a class="js-signin" rel="nofollow" href="https://secure.vendhq.com/signin">Sign in</a></li>
-                </ul>
-                <ul>
-                    <li><a rel="nofollow" href="//support.vendhq.com">Help</a></li>
-                    <li><a rel="nofollow" href="/university">Vend U</a></li>
-                    <li><a rel="nofollow" href="http://blog.vendhq.com">Blog</a></li>
-                    <li class="icons">
-                    </li>
-                    <li class="icons country-icon">
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <div id="main">
-        <section class="fullscreen">
-            <div class="background-image-holder" id="login-page">
-                <div class="feature-box">
-                    <div class="left bg-dark">
-                        <div class="login-slider">
-                            <ul class="slides" id="login-templates">
-                            </ul>
+    <head>
+        <title>Vend Log In Page</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <script type="text/javascript" src="assets/js/dev/main.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav id="top-bar">
+                <div class="content">
+                    <ul>
+                        <li><a rel="nofollow" href="/">VendHQ</a></li>
+                        <li><a class="js-signin" rel="nofollow" href="https://secure.vendhq.com/signin">Sign in</a></li>
+                    </ul>
+                    <ul>
+                        <li><a rel="nofollow" href="//support.vendhq.com">Help</a></li>
+                        <li><a rel="nofollow" href="/university">Vend U</a></li>
+                        <li><a rel="nofollow" href="http://blog.vendhq.com">Blog</a></li>
+                        <li class="icons">
+                        </li>
+                        <li class="icons country-icon">
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div id="main">
+            <section class="fullscreen">
+                <div class="background-image-holder" id="login-page">
+                    <div class="feature-box container">
+                        <div class="row">
+                           
+                            <div class="col-md-7 col-md-push-5 col-sm-12 bg-light">
+                                <form>
+                                    <div class="right-title">
+                                        <object id="vend-tag" data="images/vend-tag-logo.svg" type="image/svg+xml">
+                                            <a href="/"></a>
+                                        </object>
+                                        <h2>Sign in</h2>
+                                    </div> 
+                                    <div class="subtitle font-dark bold mt45 mb25">
+                                        INDIE HOME COLLECTIVE
+                                        <span class="font-grey float-right"><a href="/">Not your store?</a></span>
+                                    </div>
+                                    <input class="id" placeholder="Email or Username" type="text" required>
+                                    <input class="password" placeholder="Password" type="password" required>
+                                    <div >
+                                        <span class="subtitle bold inner-link"><a href="/">Forgot your Sign in?</a></span>
+                                        <a class="button float-right submit-btn"  href="/">Try Vend for free</a>
+                                    </div>
+                                </form>
+                            </div>
+                             <div class="col-md-5 col-md-pull-7 col-sm-12 bg-dark">
+                                <div class="login-slider left">
+                                    <ul class="slides" id="login-templates">
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-7 col-md-offset-5">
+                                <p class="heading--5 mt20">Dont have an account? Try vend for free.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="right">
-                        <form class="bg-light">
-                            <div class="right-title">
-                                <object id="vend-tag" data="images/vend-tag-logo.svg" type="image/svg+xml"></object>
-                                <h2>Sign in</h2>
-                            </div>
-                        </form>
-                        <p class="heading--5">Dont have an account? Try vend for free.</p>
-                    </div>
                 </div>
-            </div>
-        </section>
-    </div>
-</body>
-
-
-
-<script id="sliderTpl" type="text/template">
+            </section>
+        </div>
+    </body>
+    <script id="sliderTpl" type="text/template">
     {{#slider}}
-        <li>
-            <div class="left-title uppercase bold">
-                {{name}}
-            </div>
-            <img alt="Image" src="{{url}}" />
-            <p>{{copy}}</p>
-        </li>
+    <li>
+        <div class="subtitle uppercase bold font-light mb45">
+            {{name}}
+        </div>
+        <img alt="Image" src="{{url}}" />
+        <p>{{copy}}</p>
+    </li>
     {{/slider}}
-</script>
-
+    </script>
 </html>

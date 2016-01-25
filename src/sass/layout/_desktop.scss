@@ -13,13 +13,31 @@ h5 {
     line-height: 1.2em;
     font-weight: 600;
 }
-
+.float-right{
+    float:right;
+}
 .bg-dark {
     background-color: #525252;
 }
 
 .bg-light {
     background-color: #fff;
+}
+.font-dark{
+    color: #404040;
+}
+.font-grey, {
+    color: #dfdfdf;
+    a{
+        color: #dfdfdf;
+        &:hover,&:forus{
+            color: #dfdfdf;
+            text-decoration: none;
+        }
+    }
+}
+.font-light{
+    color:#fff;
 }
 
 .uppercase {

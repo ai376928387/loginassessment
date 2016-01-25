@@ -6869,6 +6869,11 @@ Themes
   _admin.scss
 **/
 /* line 1, ../../src/sass/themes/_vend.scss */
+html {
+  font-size: 16px;
+}
+
+/* line 4, ../../src/sass/themes/_vend.scss */
 body {
   font-size: 14px;
   font-family: proxima-nova, sans-serif;
@@ -6877,25 +6882,25 @@ body {
   background-color: #ececec;
 }
 
-/* line 8, ../../src/sass/themes/_vend.scss */
+/* line 11, ../../src/sass/themes/_vend.scss */
 header, #main {
   max-width: 1440px;
   margin: 0 auto;
 }
 
-/* line 13, ../../src/sass/themes/_vend.scss */
+/* line 16, ../../src/sass/themes/_vend.scss */
 section {
   padding: 96px 0;
   position: relative;
   overflow: hidden;
 }
 
-/* line 18, ../../src/sass/themes/_vend.scss */
+/* line 21, ../../src/sass/themes/_vend.scss */
 a, a:hover, a:focus {
   text-decoration: none;
 }
 
-/* line 21, ../../src/sass/themes/_vend.scss */
+/* line 24, ../../src/sass/themes/_vend.scss */
 .background-image-holder {
   position: absolute;
   width: 100%;
@@ -6921,6 +6926,26 @@ Layout
 
   Having the navigation file (_navigation.scss) in this folder could make sense although I use to put it in components/ (see next section). I think it would be better in the /layout folder but I’ll let you decide.
 **/
+/* line 1, ../../src/sass/layout/_spacing.scss */
+.mt20 {
+  margin-top: 20px;
+}
+
+/* line 4, ../../src/sass/layout/_spacing.scss */
+.mt45 {
+  margin-top: 45px;
+}
+
+/* line 7, ../../src/sass/layout/_spacing.scss */
+.mb25 {
+  margin-bottom: 25px;
+}
+
+/* line 10, ../../src/sass/layout/_spacing.scss */
+.mb45 {
+  margin-bottom: 45px;
+}
+
 /* line 1, ../../src/sass/layout/_header.scss */
 #top-bar {
   height: 30px;
@@ -6938,26 +6963,34 @@ Layout
   margin-left: auto;
   margin-right: auto;
 }
-/* line 17, ../../src/sass/layout/_header.scss */
+/* line 16, ../../src/sass/layout/_header.scss */
+#top-bar .content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 23, ../../src/sass/layout/_header.scss */
 #top-bar ul {
   list-style: none;
+  float: right;
   margin: 0;
+  padding: 0;
   color: #dfdfdf;
   font-size: 11px;
   font-weight: 700;
 }
-/* line 24, ../../src/sass/layout/_header.scss */
+/* line 32, ../../src/sass/layout/_header.scss */
 #top-bar ul:first-child {
   float: left;
 }
-/* line 28, ../../src/sass/layout/_header.scss */
+/* line 36, ../../src/sass/layout/_header.scss */
 #top-bar ul li {
   float: left;
   margin: 0;
   line-height: 30px;
   height: 30px;
 }
-/* line 34, ../../src/sass/layout/_header.scss */
+/* line 42, ../../src/sass/layout/_header.scss */
 #top-bar ul li a {
   padding: 0 10px;
   display: inline-block;
@@ -6984,22 +7017,51 @@ h5 {
   font-weight: 600;
 }
 
-/* line 17, ../../src/sass/layout/_desktop.scss */
+/* line 16, ../../src/sass/layout/_desktop.scss */
+.float-right {
+  float: right;
+}
+
+/* line 19, ../../src/sass/layout/_desktop.scss */
 .bg-dark {
   background-color: #525252;
 }
 
-/* line 21, ../../src/sass/layout/_desktop.scss */
+/* line 23, ../../src/sass/layout/_desktop.scss */
 .bg-light {
   background-color: #fff;
 }
 
-/* line 25, ../../src/sass/layout/_desktop.scss */
+/* line 26, ../../src/sass/layout/_desktop.scss */
+.font-dark {
+  color: #404040;
+}
+
+/* line 29, ../../src/sass/layout/_desktop.scss */
+.font-grey {
+  color: #dfdfdf;
+}
+/* line 31, ../../src/sass/layout/_desktop.scss */
+.font-grey a {
+  color: #dfdfdf;
+}
+/* line 33, ../../src/sass/layout/_desktop.scss */
+.font-grey a:hover, .font-grey a:forus {
+  color: #dfdfdf;
+  text-decoration: none;
+}
+
+/* line 39, ../../src/sass/layout/_desktop.scss */
+.font-light {
+  color: #fff;
+}
+
+/* line 43, ../../src/sass/layout/_desktop.scss */
 .uppercase {
   text-transform: uppercase;
 }
 
-/* line 29, ../../src/sass/layout/_desktop.scss */
+/* line 47, ../../src/sass/layout/_desktop.scss */
 .bold {
   font-weight: bold;
 }
@@ -7366,59 +7428,77 @@ Pages
 #login-page {
   background: url("../../images/background.jpg") 100% 100% no-repeat;
 }
-/* line 3, ../../src/sass/pages/_login.page.scss */
+/* line 4, ../../src/sass/pages/_login.page.scss */
 #login-page .feature-box {
   width: 840px;
   margin: 135px auto;
 }
-/* line 6, ../../src/sass/pages/_login.page.scss */
+/* line 8, ../../src/sass/pages/_login.page.scss */
 #login-page .feature-box .left,
 #login-page .feature-box form {
   padding: 50px 40px;
   float: left;
+  width: 100%;
 }
-/* line 11, ../../src/sass/pages/_login.page.scss */
-#login-page .feature-box .left {
-  width: 300px;
-}
-/* line 14, ../../src/sass/pages/_login.page.scss */
-#login-page .feature-box .right {
-  width: 540px;
-  float: left;
-}
-/* line 18, ../../src/sass/pages/_login.page.scss */
-#login-page .feature-box form {
+/* line 16, ../../src/sass/pages/_login.page.scss */
+#login-page .feature-box form input {
+  padding: 15px;
   width: 100%;
 }
 /* line 21, ../../src/sass/pages/_login.page.scss */
-#login-page .feature-box .left-title {
-  font-size: 12px;
-  color: #d2d2d2;
-  line-height: 1;
-  margin-bottom: 45px;
+#login-page .feature-box form .id {
+  margin-bottom: 10px;
+}
+/* line 25, ../../src/sass/pages/_login.page.scss */
+#login-page .feature-box form .password {
+  margin-bottom: 20px;
 }
 /* line 28, ../../src/sass/pages/_login.page.scss */
+#login-page .feature-box form a.inner-link {
+  height: 46px;
+}
+/* line 31, ../../src/sass/pages/_login.page.scss */
+#login-page .feature-box form .submit-btn {
+  color: #fff;
+  background-color: #41af4b;
+  border-color: #41af4b;
+}
+/* line 36, ../../src/sass/pages/_login.page.scss */
+#login-page .feature-box form a.submit-btn {
+  font-size: 16px;
+  display: inline-block;
+  padding: 0 24px;
+  line-height: 44px;
+  border-radius: 3px;
+}
+/* line 45, ../../src/sass/pages/_login.page.scss */
+#login-page .feature-box .subtitle {
+  font-size: 12px;
+  line-height: 1;
+}
+/* line 51, ../../src/sass/pages/_login.page.scss */
 #login-page .feature-box .slides img {
   width: 220px;
   height: auto;
 }
-/* line 32, ../../src/sass/pages/_login.page.scss */
+/* line 56, ../../src/sass/pages/_login.page.scss */
 #login-page .feature-box .slides p {
   padding-top: 17px;
   color: #d2d2d2;
 }
-/* line 37, ../../src/sass/pages/_login.page.scss */
+/* line 62, ../../src/sass/pages/_login.page.scss */
 #login-page .feature-box .right-title {
   height: 57px;
 }
-/* line 39, ../../src/sass/pages/_login.page.scss */
+/* line 65, ../../src/sass/pages/_login.page.scss */
 #login-page .feature-box .right-title h2 {
   display: inline-block;
   margin: 0 auto;
   line-height: 57px;
 }
-/* line 45, ../../src/sass/pages/_login.page.scss */
+/* line 72, ../../src/sass/pages/_login.page.scss */
 #login-page .feature-box #vend-tag {
+  float: left;
   display: inline-block;
   height: 100%;
   padding-right: 16px;
