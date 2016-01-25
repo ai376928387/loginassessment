@@ -1,94 +1,143 @@
 #login-page {
-    background: url("../../images/background.jpg") 100% 100% no-repeat;
+  background: url("../../images/background.jpg") 100% 100% no-repeat;
+
+  .feature-box {
+    width: 840px;
+    margin: 135px auto;
+
+    .left {
+      min-height: 405px;
+    }
+
+    form {
+      margin-bottom: 0;
+
+      input {
+        padding: 15px;
+        width: 100%;
+      }
+
+      .id {
+        margin-bottom: 10px;
+      }
+
+      .password {
+        margin-bottom: 20px;
+      }
+
+      .inner-link {
+        left: auto;
+
+        a {
+          line-height: 46px;
+          color: #0077d6;
+        }
+      }
+
+      .submit-btn {
+        right: 0;
+        color: #fff;
+        background-color: #41af4b;
+        border: none;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 0 75px;
+        line-height: 44px;
+        border-radius: 3px;
+        width: 200px;
+
+        &:hover {
+          background-color: #ebebeb;
+          border-color: #ebebeb;
+        }
+      }
+    }
+
+    .subtitle {
+      font-size: 12px;
+      line-height: 1;
+    }
+
+    .slides {
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      p {
+        padding-top: 17px;
+        color: #d2d2d2;
+      }
+    }
+
+    .right-title {
+      height: 57px;
+
+      h2 {
+        display: inline-block;
+        margin: 0 auto;
+        line-height: 57px;
+      }
+    }
+
+    #vend-tag {
+      float: left;
+      display: inline-block;
+      height: 100%;
+      padding-right: 16px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .mobile-invisible {
+    display: none;
+  }
+
+  .float-sm-left {
+    float: left;
+  }
+
+  #login-page {
+    background-image: none !important;
+
+    .right-title {
+      display: table;
+      margin: 0 auto;
+    }
 
     .feature-box {
-        width: 840px;
-        margin: 135px auto;
-
-        .left,
-        form {
-            padding: 50px 40px;
-            float: left;
-            width: 100%;
-        }
-
-        form {
-            input {
-                padding: 15px;
-                width: 100%;
-            }
-
-            .id {
-                margin-bottom: 10px;
-            }
-
-            .password {
-                margin-bottom: 20px;
-            }
-
-            .inner-link {
-                a {
-                    line-height: 46px;
-                }
-            }
-
-            .submit-btn {
-                color: #fff;
-                background-color: #41af4b;
-                border-color: #41af4b;
-
-                &:hover {
-                    background-color: #ebebeb;
-                    border-color: #ebebeb;
-                }
-            }
-
-            a.submit-btn {
-                font-size: 16px;
-                display: inline-block;
-                padding: 0 24px;
-                line-height: 44px;
-                border-radius: 3px;
-            }
-        }
-
-        .subtitle {
-            font-size: 12px;
-            line-height: 1;
-        }
-
-        .slides {
-            img {
-                width: 220px;
-                height: auto;
-            }
-
-            p {
-                padding-top: 17px;
-                color: #d2d2d2;
-            }
-        }
-
-        .right-title {
-            height: 57px;
-
-            h2 {
-                display: inline-block;
-                margin: 0 auto;
-                line-height: 57px;
-            }
-        }
-
-        #vend-tag {
-            float: left;
-            display: inline-block;
-            height: 100%;
-            padding-right: 16px;
-        }
+      width: 100%;
+      margin: 0;
     }
-}
-@media (min-width: $screen-sm-min) {
-    #login-page {
-        background-image:none;
+
+    .login-slider {
+      li {
+        padding-bottom: 44px;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
     }
+
+    span.icon-remove {
+      width: 14px;
+      height: 14px;
+      background: url("../../images/remove.png") no-repeat center;
+    }
+
+    .submit-btn {
+      width: 100% !important;
+      padding: 0;
+      text-align: center;
+    }
+
+    .inner-link {
+      display: block;
+      text-align: center;
+    }
+  }
 }

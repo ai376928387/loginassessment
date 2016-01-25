@@ -1,74 +1,82 @@
 <!DOCTYPE>
 <html>
-    <head>
-        <title>Vend Log In Page</title>
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-        <script type="text/javascript" src="assets/js/dev/main.js"></script>
-    </head>
-    <body>
-        <header>
-            <nav id="top-bar">
-                <div class="content">
-                    <ul>
-                        <li><a rel="nofollow" href="/">VendHQ</a></li>
-                        <li><a class="js-signin" rel="nofollow" href="https://secure.vendhq.com/signin">Sign in</a></li>
-                    </ul>
-                    <ul>
-                        <li><a rel="nofollow" href="//support.vendhq.com">Help</a></li>
-                        <li><a rel="nofollow" href="/university">Vend U</a></li>
-                        <li><a rel="nofollow" href="http://blog.vendhq.com">Blog</a></li>
-                        <li class="icons">
-                        </li>
-                        <li class="icons country-icon">
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <div id="main">
-            <section class="fullscreen">
-                <div class="background-image-holder" id="login-page">
-                    <div class="feature-box container">
-                        <div class="row">
-                           
-                            <div class="col-md-7 col-md-push-5 col-sm-12 bg-light">
-                                <form>
-                                    <div class="right-title">
-                                        <object id="vend-tag" data="images/vend-tag-logo.svg" type="image/svg+xml">
-                                            <a href="/"></a>
-                                        </object>
-                                        <h2>Sign in</h2>
-                                    </div> 
-                                    <div class="subtitle font-dark bold mt45 mb25">
-                                        INDIE HOME COLLECTIVE
-                                        <span class="font-grey float-right"><a href="/">Not your store?</a></span>
-                                    </div>
-                                    <input class="id" placeholder="Email or Username" type="text" required>
-                                    <input class="password" placeholder="Password" type="password" required>
-                                    <div >
-                                        <span class="subtitle bold inner-link"><a href="/">Forgot your Sign in?</a></span>
-                                        <a class="button float-right submit-btn"  href="/">Try Vend for free</a>
-                                    </div>
-                                </form>
-                            </div>
-                             <div class="col-md-5 col-md-pull-7 col-sm-12 bg-dark">
-                                <div class="login-slider left">
-                                    <ul class="slides" id="login-templates">
-                                    </ul>
+
+<head>
+    <title>Vend Log In Page</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/js/dev/main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="INDEX,FOLLOW">
+</head>
+
+<body>
+    <header>
+        <nav id="top-bar">
+            <div class="content">
+                <ul>
+                    <li><a href="/">VendHQ</a></li>
+                    <li><a href="/">Sign in</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/">Help</a></li>
+                    <li><a href="/">Vend U</a></li>
+                    <li><a href="/">Blog</a></li>
+                    <li class="icons">
+                        <a href="/" class="icon chat-icon"></a>
+                    </li>
+                    <li class="icons">
+                        <a href="/" class="icon phone-icon"></a>
+                    </li>
+                    <li class="icons">
+                        <a class="flat-nz" href="/"></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="main">
+        <section class="fullscreen">
+            <div class="background-image-holder" id="login-page">
+                <div class="feature-box container">
+                    <div class="row">
+                        <div class="col-md-7 col-md-push-5 col-sm-12 bg-light ph40 pv50 ph-sm-20">
+                            <form id="login-form" action="" method="get">
+                                <div class="right-title">
+                                    <object id="vend-tag" data="images/vend-tag-logo.svg" type="image/svg+xml">
+                                        <a href="/"></a>
+                                    </object>
+                                    <h2>Sign in</h2>
                                 </div>
-                            </div>
+                                <div class="subtitle font-dark bold mt45 mb25">
+                                    INDIE HOME COLLECTIVE
+                                    <span class="font-grey float-right" id="not-store"><a href="/">Not your store?</a></span>
+                                </div>
+                                <input class="id" name="id" placeholder="Email or Username" type="text" required>
+                                <input class="password" name="password" placeholder="Password" type="password" required>
+                                <div>
+                                    <input class="submit float-right float-sm-left submit-btn submit" type="submit" value="Sign in" />
+                                    <span class="subtitle bold inner-link"><a href="/*">Forgot your Sign in?</a></span>
+                                </div>
+                            </form>
                         </div>
-                        <div class="row">
-                            <div class="col-md-7 col-md-offset-5">
-                                <p class="heading--5 mt20">Dont have an account? Try vend for free.</p>
+                        <div class="col-md-5 col-md-pull-7 col-sm-12 left bg-dark ph40 pv50 ph-sm-20">
+                            <div class="login-slider">
+                                <ul class="slides" id="login-templates">
+                                </ul>
                             </div>
                         </div>
                     </div>
+                    <div class="row mobile-invisible">
+                        <div class="col-md-7 col-md-offset-5">
+                            <p class="heading--5 mt20">Dont have an account? Try vend for free.</p>
+                        </div>
+                    </div>
                 </div>
-            </section>
-        </div>
-    </body>
-    <script id="sliderTpl" type="text/template">
+            </div>
+        </section>
+    </div>
+</body>
+<script id="sliderTpl" type="text/template">
     {{#slider}}
     <li>
         <div class="subtitle uppercase bold font-light mb45">
@@ -78,5 +86,6 @@
         <p>{{copy}}</p>
     </li>
     {{/slider}}
-    </script>
+</script>
+
 </html>

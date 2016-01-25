@@ -10,3 +10,18 @@
 .mb45{
 	margin-bottom:45px;
 }
+.ph40{
+    padding-left:40px;
+    padding-right:40px;
+}
+.pv50{
+    padding-top:50px;
+    padding-bottom:40px;
+}
+
+@media (max-width: 767px) {
+    .ph-sm-20{
+        padding-left:20px;
+        padding-right:20px;
+    }
+}
