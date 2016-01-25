@@ -25,20 +25,30 @@
             .password {
                 margin-bottom: 20px;
             }
-            a.inner-link{
-                height:46px;
+
+            .inner-link {
+                a {
+                    line-height: 46px;
+                }
             }
+
             .submit-btn {
                 color: #fff;
                 background-color: #41af4b;
                 border-color: #41af4b;
+
+                &:hover {
+                    background-color: #ebebeb;
+                    border-color: #ebebeb;
+                }
             }
-            a.submit-btn{
+
+            a.submit-btn {
                 font-size: 16px;
                 display: inline-block;
                 padding: 0 24px;
                 line-height: 44px;
-                border-radius:3px;
+                border-radius: 3px;
             }
         }
 

@@ -7453,17 +7453,22 @@ Pages
 #login-page .feature-box form .password {
   margin-bottom: 20px;
 }
-/* line 28, ../../src/sass/pages/_login.page.scss */
-#login-page .feature-box form a.inner-link {
-  height: 46px;
+/* line 30, ../../src/sass/pages/_login.page.scss */
+#login-page .feature-box form .inner-link a {
+  line-height: 46px;
 }
-/* line 31, ../../src/sass/pages/_login.page.scss */
+/* line 35, ../../src/sass/pages/_login.page.scss */
 #login-page .feature-box form .submit-btn {
   color: #fff;
   background-color: #41af4b;
   border-color: #41af4b;
 }
-/* line 36, ../../src/sass/pages/_login.page.scss */
+/* line 40, ../../src/sass/pages/_login.page.scss */
+#login-page .feature-box form .submit-btn:hover {
+  background-color: #ebebeb;
+  border-color: #ebebeb;
+}
+/* line 46, ../../src/sass/pages/_login.page.scss */
 #login-page .feature-box form a.submit-btn {
   font-size: 16px;
   display: inline-block;
@@ -7471,32 +7476,32 @@ Pages
   line-height: 44px;
   border-radius: 3px;
 }
-/* line 45, ../../src/sass/pages/_login.page.scss */
+/* line 55, ../../src/sass/pages/_login.page.scss */
 #login-page .feature-box .subtitle {
   font-size: 12px;
   line-height: 1;
 }
-/* line 51, ../../src/sass/pages/_login.page.scss */
+/* line 61, ../../src/sass/pages/_login.page.scss */
 #login-page .feature-box .slides img {
   width: 220px;
   height: auto;
 }
-/* line 56, ../../src/sass/pages/_login.page.scss */
+/* line 66, ../../src/sass/pages/_login.page.scss */
 #login-page .feature-box .slides p {
   padding-top: 17px;
   color: #d2d2d2;
 }
-/* line 62, ../../src/sass/pages/_login.page.scss */
+/* line 72, ../../src/sass/pages/_login.page.scss */
 #login-page .feature-box .right-title {
   height: 57px;
 }
-/* line 65, ../../src/sass/pages/_login.page.scss */
+/* line 75, ../../src/sass/pages/_login.page.scss */
 #login-page .feature-box .right-title h2 {
   display: inline-block;
   margin: 0 auto;
   line-height: 57px;
 }
-/* line 72, ../../src/sass/pages/_login.page.scss */
+/* line 82, ../../src/sass/pages/_login.page.scss */
 #login-page .feature-box #vend-tag {
   float: left;
   display: inline-block;
