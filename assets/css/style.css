@@ -7508,3 +7508,10 @@ Pages
   height: 100%;
   padding-right: 16px;
 }
+
+@media (min-width: 768px) {
+  /* line 91, ../../src/sass/pages/_login.page.scss */
+  #login-page {
+    background-image: none;
+  }
+}

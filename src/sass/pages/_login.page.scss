@@ -87,3 +87,8 @@
         }
     }
 }
+@media (min-width: $screen-sm-min) {
+    #login-page {
+        background-image:none;
+    }
+}
